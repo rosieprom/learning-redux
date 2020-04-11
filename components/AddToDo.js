@@ -18,7 +18,8 @@ const CustomInput = styled.input`
   border-radius: 10px;
   display: inline-flex;
   text-align: center;
-  text-transform: uppercase;
+  font-family: "FiraSans";
+  font-size: 3rem;
 `;
 
 const CustomButton = styled.button`

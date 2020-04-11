@@ -5,6 +5,7 @@ import VisibilityFilters from "../components/VisibilityFilters";
 
 const Title = styled.h1`
   text-align: center;
+  font-family: "Montserrat-Bold";
 `;
 
 const Container = styled.div`
@@ -18,8 +19,8 @@ const Index = ({}) => {
     <Container>
       <Title>Goals</Title>
       <AddTodo />
-      <TodoList />
       <VisibilityFilters />
+      <TodoList />
     </Container>
   );
 };

@@ -18,6 +18,7 @@ const List = styled.ul`
 
 const Text = styled.h2`
   text-align: center;
+  font-family: "Montserrat-Bold";
 `;
 
 const TodoList = ({ todos }) => (
@@ -28,7 +29,7 @@ const TodoList = ({ todos }) => (
           return <Todo key={`todo-${todo.id}`} todo={todo} />;
         })
       ) : (
-        <Text>Add a goal!</Text>
+        <Text>No goals here.</Text>
       )}
     </List>
   </Container>

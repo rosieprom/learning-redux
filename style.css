@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf");
+  src: url("/fonts/Montserrat-ExtraLight.ttf");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("/fonts/Montserrat-Bold.ttf");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FiraSans";
+  src: url("/fonts/FiraSans-Regular.ttf");
+  src: url("/fonts/FiraSans-Black.ttf");
+  src: url("/fonts/FiraSans-ExtraLight.ttf");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FireSans-Bold";
+  src: url("/fonts/FiraSans-Bold.ttf");
+  font-display: swap;
+  font-style: normal;
+}

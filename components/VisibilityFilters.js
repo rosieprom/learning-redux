@@ -10,12 +10,25 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const FilterText = styled.h2`
-  font-weight: 400;
+const FilterText = styled.button`
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 10px;
+  display: inline-flex;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  margin: 2rem;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 `;
 
 const VisibilityFilters = ({ activeFilter, setFilter }) => {

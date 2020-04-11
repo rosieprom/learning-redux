@@ -10,19 +10,18 @@ const ListItem = styled.li`
 
 const Text = styled.h1`
   font-weight: 600;
+  font-family: "FiraSans";
 `;
 
 const Todo = ({ todo, toggleTodo }) => (
   <ListItem onClick={() => toggleTodo(todo.id)}>
-    {todo && todo.completed ? "Completed" : "Incompleted"}{" "}
-    <Text
-      className={
-        ("todo-item__text",
-        todo && todo.completed && "todo-item__text--completed")
-      }
-    >
-      {todo.content}
-    </Text>
+    {todo && todo.completed ? (
+      <s>
+        <Text>{todo.content}</Text>
+      </s>
+    ) : (
+      <Text>{todo.content}</Text>
+    )}
   </ListItem>
 );
 
