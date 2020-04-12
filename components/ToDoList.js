@@ -18,7 +18,7 @@ const List = styled.ul`
 
 const Text = styled.h2`
   text-align: center;
-  font-family: "Montserrat-Bold";
+  font-family: "FiraSans";
 `;
 
 const TodoList = ({ todos }) => (

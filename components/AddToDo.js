@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 import { addTodo } from "../redux/actions";
 import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  margin: 0rem 20rem;
   flex-direction: column;
+  align-items: center;
 `;
 
 const CustomInput = styled.input`
-  padding: 2rem 3rem;
+  padding: 4rem 5rem;
   margin: 1rem;
   background-color: #fff;
   border: 1px solid #000;
@@ -32,7 +32,7 @@ const CustomButton = styled.button`
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  margin: 0rem 20rem;
+  width: 20vw;
 
   display: inline-block;
   padding: 15px 20px;
@@ -63,6 +63,7 @@ class AddTodo extends React.Component {
     return (
       <Container>
         <CustomInput
+          placeholder="What goals?"
           onChange={(e) => this.updateInput(e.target.value)}
           value={this.state.input}
         />
