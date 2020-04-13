@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { connect } from "react-redux";
 import { setFilter } from "../redux/actions";
 import { VISIBILITY_FILTERS } from "../constants";
